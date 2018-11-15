@@ -16,7 +16,7 @@ public class OOP {                                               // Object-Orien
 
        String name = "Gleb Pichshulin";                                 // Instance Variable
 
-       String dob = "03/07/1984";                                  // Instance Variable
+       String dob = "01/01/2001";                                  // Instance Variable
 
        void print(String param) {System.out.println(param);}     // Instance Void Method
 
