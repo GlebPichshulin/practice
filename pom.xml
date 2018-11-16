@@ -1,5 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>core</groupId>
   <artifactId>YATS_Approval</artifactId>
@@ -8,96 +9,91 @@
   <name>YATS_Approval</name>
   <url>http://maven.apache.org</url>
   <properties>
-                <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-         </properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <dependencies>
-	  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-	  <dependency>
-	      <groupId>org.testng</groupId>
-	      <artifactId>testng</artifactId>
-	      <version>6.14.3</version>
-	      <scope>test</scope>
-	  </dependency>
-	  <!-- https://mvnrepository.com/artifact/org.hamcrest/java-hamcrest -->
-	  <dependency>
-	      <groupId>org.hamcrest</groupId>
-	      <artifactId>java-hamcrest</artifactId>
-	      <version>2.0.0.0</version>
-	      <scope>test</scope>
-	  </dependency>
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.14.3</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.hamcrest/java-hamcrest -->
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>java-hamcrest</artifactId>
+      <version>2.0.0.0</version>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
-	<!-- https://mvnrepository.com/artifact/com.beust/jcommander -->
-	<dependency>
-	    <groupId>com.beust</groupId>
-	    <artifactId>jcommander</artifactId>
-	    <version>1.72</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-report-plugin -->
-	<dependency>
-	    <groupId>org.apache.maven.plugins</groupId>
-	    <artifactId>maven-surefire-report-plugin</artifactId>
-	    <version>3.0.0-M1</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-assembly-plugin -->
-	<dependency>
-	    <groupId>org.apache.maven.plugins</groupId>
-	    <artifactId>maven-assembly-plugin</artifactId>
-	    <version>3.1.0</version>
-	</dependency>
-<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
-<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-jar-plugin</artifactId>
-    <version>3.1.0</version>
-</dependency>
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>3.141.5</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>3.141.59</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-chrome-driver</artifactId>
-    <version>3.141.59</version>
-</dependency>
+    <!-- https://mvnrepository.com/artifact/com.beust/jcommander -->
+    <dependency>
+      <groupId>com.beust</groupId>
+      <artifactId>jcommander</artifactId>
+      <version>1.72</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-report-plugin -->
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-report-plugin</artifactId>
+      <version>3.0.0-M1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-assembly-plugin -->
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-assembly-plugin</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-jar-plugin</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>3.141.59</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-chrome-driver</artifactId>
+      <version>3.141.59</version>
+    </dependency>
   </dependencies>
   <reporting>
-                <plugins>
-                       <plugin>
-                             <groupId>org.apache.maven.plugins</groupId>
-                             <artifactId>maven-surefire-report-plugin</artifactId>
-                             <version>3.141.5</version>
-                       </plugin>
-                </plugins>
-         </reporting>
-<build>
-   <plugins>
+    <plugins>
       <plugin>
-<!-- Build an executable JAR -->
-      <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>3.0.0-M1</version>
+      </plugin>
+    </plugins>
+  </reporting>
+  <build>
+    <plugins>
+      <plugin>
+        <!-- Build an executable JAR -->
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.1.0</version>
-		<configuration>
-		          <archive>
-		            <manifest>
-		              <mainClass>core.Chrome</mainClass>
-		            </manifest>
-		          </archive>
-		        </configuration>
-		      </plugin>
-		    </plugins>
-		  </build>
-		</project>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>core.Chrome</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
